@@ -81,7 +81,7 @@ print("--- Sandbox Testing ---")
 def evaluate_live_input(custom_text):
     vectorized_input = tfidf_vectorizer.transform([custom_text])
     outcome = model.predict(vectorized_input)[0]
-    return "🚨 SPAM ALERT" if outcome == 1 else "✅ CLEAR / HAM"
+    return " SPAM ALERT" if outcome == 1 else " CLEAR / HAM"
 
 
 # Real-time samples
